@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Eastman';
+    src: url(../fonts/Eastman-Regular.eot);
+    src: url(../fonts/Eastman-Regular.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/Eastman-Regular.woff2) format('woff2'),
+         url(../fonts/Eastman-Regular.woff) format('woff'),
+         url(../fonts/Eastman-Regular.ttf) format('truetype'),
+         url(../fonts/Eastman-Regular.svg#Eastman-Regular) format('svg'),
+         url(../fonts/Eastman-Regular.otf) format('otf');
+  }
+  @font-face {
+    font-family: 'Eastman';
+    src: url(../Eastman-Medium.eot);
+    src: url(../fonts/Eastman-Medium.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/Eastman-Medium.otf) format('otf'),
+         url(../fonts/Eastman-Medium.svg#Eastman-Medium) format('svg'),
+         url(../fonts/Eastman-Medium.ttf) format('truetype'),
+         url(../fonts/Eastman-Medium.woff) format('woff'),
+         url(../fonts/Eastman-Medium.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Eastman';
+    src: url(../fonts/Eastman-Bold.eot);
+    src: url(../fonts/Eastman-Bold.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/Eastman-Bold.woff2) format('woff2'),
+        url(../fonts/Eastman-Bold.woff) format('woff'),
+        url(../fonts/Eastman-Bold.ttf) format('truetype'),
+        url(../fonts/Eastman-Bold.svg#Eastman-Bold) format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Eastman';
+    src: url(../fonts/Eastman-Extrabold.eot);
+    src: url(../fonts/Eastman-Extrabold.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/Eastman-Extrabold.woff2) format('woff2'),
+         url(../fonts/Eastman-Extrabold.woff) format('woff'),
+         url(../fonts/Eastman-Extrabold.ttf) format('truetype'),
+         url(../fonts/Eastman-Extrabold.svg#Eastman-Extrabold) format('svg'),
+         url(../fonts/Eastman-Extrabold.otf) format('otf');
+  }
+  @font-face {
+    font-family: 'Eastman';
+    src: url(../fonts/Eastman-Light.eot);
+    src: url(../fonts/Eastman-Light.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/Eastman-Light.otf) format('otf'),
+         url(../fonts/Eastman-Light.svg#Eastman-Light) format('svg'),
+         url(../fonts/Eastman-Light.ttf) format('truetype'),
+         url(../fonts/Eastman-Light.woff) format('woff'),
+         url(../fonts/Eastman-Light.woff2) format('woff2');
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+  body {
+    font-family: 'Eastman';
+}
+.container {
+    margin: 0 auto;
+    
+}
+
+.header {
+    display: flex;
+}
+
+.header_container {
+    display: flex;
+    padding-top: calc(13px + 44 * ((100vw - 320px) / 1080));
+
+    /*padding-top: calc(17px + 40 * ((100vw - 320px) / 1080)); */
+   
+ /*  padding-left: calc(23px + 77 * ((100vw - 320px) / 1080));
+    padding-right: calc(20px + 70 * ((100vw - 320px) / 1080)); */
+    
+}
+
+.aslogistic {
+    display: flex;
+    align-items: center;
+    gap: calc(3px + 10 * ((100vw - 320px) / 1080));
+    margin-right: calc(130px + 440 * ((100vw - 320px) / 1080));
+
+}
+
+.logo {
+    width: calc(14px + 50 * ((100vw - 320px) / 1080));
+    width: calc(16px + 56 * ((100vw - 320px) / 1080));
+}
+
+.namelogo {
+    width: calc(35px + 122 * ((100vw - 320px) / 1080));
+    height: calc(7px + 25 * ((100vw - 320px) / 1080));
+}
+
+.contacts {
+    display: flex;
+    gap: calc(11px + 38 * ((100vw - 320px) / 1080));  
+    justify-content: space-between;
+}
+
+.contacts__left {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    gap: calc(3px + 10 * ((100vw - 320px) / 1080));
+    justify-content: space-between;
+}
+
+.zvonok {
+    width: calc(4px + 14 * ((100vw - 320px) / 1080));
+    height: calc(4px + 14 * ((100vw - 320px) / 1080));
+}
+
+.contact__text {
+    font-size: calc(5px + 15 * ((100vw - 320px) / 1080));
+    font-weight: 400;
+    color: black;
+    
+}
+
+.contact__one {
+    margin-bottom: calc(2px + 8 * ((100vw - 320px) / 1080));
+}
+
+.whatsapp {
+    width: calc(5px + 15 * ((100vw - 320px) / 1080));
+    height: calc(5px + 15 * ((100vw - 320px) / 1080));
+}
+
+.contacts__right {
+    display: flex;
+}
+
+.contact__three {
+    display: flex;  
+}
+
+.geolocation {
+    width: calc(4px + 12 * ((100vw - 320px) / 1080));
+    height: calc(5px + 18 * ((100vw - 320px) / 1080));
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+   
+
+}
+
+.buger_one {
+    width: calc(9px + 31 * ((100vw - 320px) / 1080));
+    height: calc(0.7px + 2.3 * ((100vw - 320px) / 1080));
+    margin-bottom: calc(1px + 6 * ((100vw - 320px) / 1080));
+    margin-left: calc(16px + 56 * ((100vw - 320px) / 1080));
+}
+
+.buger_two {
+    width: calc(11px + 41 * ((100vw - 320px) / 1080));
+    height: calc(0.7px + 2.3 * ((100vw - 320px) / 1080));
+    margin-bottom: calc(3px + 9 * ((100vw - 320px) / 1080));
+    margin-left: calc(15px + 51 * ((100vw - 320px) / 1080));
+}
+
+.buger_three {
+    width: calc(9px + 31 * ((100vw - 320px) / 1080));
+    height: calc(0.7px + 2.3 * ((100vw - 320px) / 1080));
+margin-left: calc(17px + 61 * ((100vw - 320px) / 1080));
+}
