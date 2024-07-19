@@ -6,7 +6,7 @@
 .header__container {
   display: flex;
   justify-content: space-between;
-  gap: calc(130px + 440 * (100vw - 320px) / 1600);
+  gap: calc(50px + 250 * ((100vw - 320px) / 1600));
 }
 
 .header__logo {
@@ -45,17 +45,25 @@
   align-items: center;
 }
 
+.contact_adress {
+  color: black;
+  font-size: calc(8px + 12 * ((100vw - 320px) / 1600));
+  font-weight: 400;
+}
+
 .contact_img img {
   width: calc(18px + 6*((100vw - 320px) /(1920 - 320)));
-  height: auto;
+  height: calc(3px + 15 * ((100vw - 320px) / 1600));
+
 }
 
 .whatsapp img {
   width: calc(4px + 16 * ((100vw - 320px) / 1600));
-  height: auto;
+  height: calc(3px + 17 * ((100vw - 320px) / 1600));
+
 }
 
-.contac_adress img {
+.contact_adress img {
   bottom: 20%;
   position: relative;
   
@@ -63,13 +71,157 @@
 
 .contact_text {
   color: black;
-  font-size: calc(4px + 16 * (100vw - 320px) / 1600);
+  font-size: calc(8px + 12 * ((100vw - 320px) / 1600));
   font-weight: 400;
 }
 
+.contact_text:hover {
+  color: #633F94;
+  transition: all 0.2s;
+}
+
+.header__burger {
+  border: 0;
+  background: 0 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.header__burger img {
+ /* width: calc(9px + 43 * ((100vw - 320px) / 1600)); */
+ width: calc(12px + 60 * ((100vw - 320px) / 1600));
+
+  height: auto;
+}
+
+.menu {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99998;
+  background-color: rgba(255,255,255,.84);
+  backdrop-filter: blur(11px);
+  overflow-y: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .4s, visibility .4s;
+}
+
+.close__menu img {
+  width: calc(12px + 60 * ((100vw - 320px) / 1600));
+  cursor: pointer;
+}
+
+.menu__box {
+ display: flex;
+ padding: calc(16px + 23 * (100vw - 320px) / 1080);
+ align-items: center;
+ justify-content: center;
+}
+
+.menu.ok {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu.ok .menu__box {
+  transform: scale(1);
+}
+
+.menu__box {
+  display: flex;
+}
+
+.menu__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__container {
+  padding-left: calc(30px + 242 * ((100vw - 320px) / 1600));
+    overflow: hidden;
+    display: flex;
+}
+
+.nav__scroll {
+  display: flex;
+  padding-block:calc(40px + 40*((100vw - 320px)/(1920 - 320)));
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.nav__items {
+  display: flex;
+  flex-direction: column;
+  gap: calc(10px + 25 * ((100vw - 320px) / 1600));
+
+}
+
+.nav__items a {
+  font-size: calc(8px + 12 * ((100vw - 320px) / 1600));
+  font-weight: 500;
+  color: #000000;
+  transition: all 0.4s;
+}
+
+.nav__items a:hover {
+  color: #7F53BC;
+}
 
 @media only screen and (min-width: 1440px) and (min-width: 1440px) and (max-width: 1919px) {
   :root {
     --container-width: calc(1250px + 150 * ((100vw - 1440px) / (1920 - 1440)));
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1400px) {
+    .header__container {
+      gap: calc(50px + 250 * ((100vw - 320px) / 1600));
+    }
+}
+
+@media only screen and (min-width: 629px) and (max-width: 769px) {
+  .header__container {
+    gap: calc(50px + 250 * ((100vw - 320px) / 1600));
+  }
+  .logo__name {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:469px) and (max-width: 629px) {
+  .header__container {
+    gap: calc(50px + 250 * ((100vw - 320px) / 1600));
+  }
+  .logo__name {
+    display: none;
+  }
+  .contact_adress {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width: 469px) {
+  .header__container {
+    gap: calc(50px + 250 * ((100vw - 320px) / 1600));
+  }
+  .logo__name {
+    display: none;
+  }
+  .contact_adress {
+    display: none;
   }
 }
