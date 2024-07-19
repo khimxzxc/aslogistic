@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Eastman";
+  src: url(../fonts/Eastman-Regular.eot);
+  src: url(../fonts/Eastman-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/Eastman-Regular.woff2) format("woff2"), url(../fonts/Eastman-Regular.woff) format("woff"), url(../fonts/Eastman-Regular.ttf) format("truetype"), url(../fonts/Eastman-Regular.svg#Eastman-Regular) format("svg"), url(../fonts/Eastman-Regular.otf) format("otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Eastman";
+  src: url(../Eastman-Medium.eot);
+  src: url(../fonts/Eastman-Medium.eot?#iefix) format("embedded-opentype"), url(../fonts/Eastman-Medium.otf) format("otf"), url(../fonts/Eastman-Medium.svg#Eastman-Medium) format("svg"), url(../fonts/Eastman-Medium.ttf) format("truetype"), url(../fonts/Eastman-Medium.woff) format("woff"), url(../fonts/Eastman-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Eastman";
+  src: url(../fonts/Eastman-Bold.eot);
+  src: url(../fonts/Eastman-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/Eastman-Bold.woff2) format("woff2"), url(../fonts/Eastman-Bold.woff) format("woff"), url(../fonts/Eastman-Bold.ttf) format("truetype"), url(../fonts/Eastman-Bold.svg#Eastman-Bold) format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Eastman";
+  src: url(../fonts/Eastman-Extrabold.eot);
+  src: url(../fonts/Eastman-Extrabold.eot?#iefix) format("embedded-opentype"), url(../fonts/Eastman-Extrabold.woff2) format("woff2"), url(../fonts/Eastman-Extrabold.woff) format("woff"), url(../fonts/Eastman-Extrabold.ttf) format("truetype"), url(../fonts/Eastman-Extrabold.svg#Eastman-Extrabold) format("svg"), url(../fonts/Eastman-Extrabold.otf) format("otf");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Eastman";
+  src: url(../fonts/Eastman-Light.eot);
+  src: url(../fonts/Eastman-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/Eastman-Light.otf) format("otf"), url(../fonts/Eastman-Light.svg#Eastman-Light) format("svg"), url(../fonts/Eastman-Light.ttf) format("truetype"), url(../fonts/Eastman-Light.woff) format("woff"), url(../fonts/Eastman-Light.woff2) format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}/*# sourceMappingURL=fonts.css.map */

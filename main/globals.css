@@ -1,0 +1,35 @@
+body {
+  font-family: "Eastman", sans-serif;
+}
+
+/* .container {
+   /* width: calc(20px + 80 * ((100vw - 320px) / 1080)); 
+   width: calc(100% - var(--container-padding));
+    margin: 0 auto;
+} */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --container-padding: calc(30px + 10 * ((100vw - 320px) / (1920 - 320)));
+}
+
+.container {
+  width: calc(100% - var(--container-padding));
+  margin: 0 auto;
+  max-width: var(--container-width);
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=globals.css.map */
+
+button {
+  display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+    border: none;
+}

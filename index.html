@@ -3,47 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main/style.css">
     <link rel="stylesheet" href="main/normalize.css">
+    <link rel="stylesheet" href="main/style.css">
     <title>AS Logistic</title>
 </head>
 <body>
-    <div class="header">
-      <div class="container header_container">
+    <header class="header">
+      <div class="header__container container">
+        <a href="/" class="header__logo logo">
+          <img class="logo__image" src="image/logo.svg" alt="AS Logistic" width="72" height="72" loading="lazy">
+          <img class="logo__name" src="image/namelogo.svg" alt="AS Logistic" width="158" height="31" loading="lazy"> 
+        </a>
 
-        <div class="aslogistic">
-          <img class="logo" src="image/logo.svg" alt="logo">
-          <img class="namelogo" src="image/namelogo.svg" alt="namelogo">
-        </div>
-
-        <div class="contacts">
-          <div class="contacts__left">
-            <div class="contact contact__one">
-              <img class="zvonok" src="image/icons/zvonok.svg" alt="zvonok">
-              <span class="contact__text">+7 (7182) 68-68-88</span>
+        <div class="header__right">
+          <div class="header__contacts">
+            <div class="header__contacts telephone">
+              <a href="tel:+7 (7182) 68-68-88" target="_blank" class="header__contact">
+                <img class="contact_img" src="image/icons/zvonok.svg" alt="zvonok" width="18" height="18" loading="lazy">
+                <span class="contact_text">+7 (7182) 68-68-88</span>
+              </a>
+              <a href="#" class="header__contact">
+                <img class="contact_img whatsapp" src="image/icons/whatsapp.svg" alt="zvonok" width="18" height="18" loading="lazy">
+                <span class="contact_text">+7 (771) 850-38-88</span>
+              </a>
             </div>
-            <div class="contact contact__two">
-              <img class="whatsapp" src="image/icons/whatsapp.svg" alt="zvonok">
-              <span class="contact__text">+7 (771) 850-38-88</span>
+            <div class="header__contacts adress">
+              <a href="#" class="header__contact contac_adress">
+                <img class="contact_img" src="image/icons/geolocation.svg" alt="zvonok" width="18" height="23" loading="lazy">
+                <span class="contact_text">г. Павлодар
+                  <br>
+                  ул. Торговая 11/6</span>
+              </a>
             </div>
           </div>
-
-          <div class="contacts__right">
-            <div class="contact contact__three">
-              <img class="geolocation" src="image/icons/geolocation.svg" alt="zvonok">
-              <span class="contact__text">г. Павлодар <br>
-                ул. Торговая 11/6</span>
-            </div>
-           
-            <div class="burger">
-              <img class="buger_one" src="image/icons/one.svg" alt="">
-              <img class="buger_two" src="image/icons/two.svg" alt="">
-              <img class="buger_three" src="image/icons/one.svg" alt="">
-            </div>
-          </div>
+          <button type="button" class="header__burger">
+            <img src="image/icons/burger.svg" alt="">
+          </button>
         </div>
-        
       </div>
-    </div>
+    </header>
 </body>
 </html>

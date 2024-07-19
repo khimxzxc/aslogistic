@@ -1,0 +1,75 @@
+.header {
+  padding: calc(16px + 23 * (100vw - 320px) / 1080);
+  border-bottom: 1px solid black;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  gap: calc(130px + 440 * (100vw - 320px) / 1600);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__logo img {
+  max-width: calc(57px + 95 * (100vw - 320px) / 1600);
+  max-height: calc(36px + 60 * (100vw - 320px) / 1600);
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: calc(16px + 46 * (100vw - 320px) / 1600);
+  
+}
+
+.header__contacts {
+  display: flex;
+  gap: calc(8px + 41 * (100vw - 320px) / 1600);
+  flex-wrap: wrap;
+}
+
+.header__contacts .telephone {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.header__contact {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.contact_img img {
+  width: calc(18px + 6*((100vw - 320px) /(1920 - 320)));
+  height: auto;
+}
+
+.whatsapp img {
+  width: calc(4px + 16 * ((100vw - 320px) / 1600));
+  height: auto;
+}
+
+.contac_adress img {
+  bottom: 20%;
+  position: relative;
+  
+}
+
+.contact_text {
+  color: black;
+  font-size: calc(4px + 16 * (100vw - 320px) / 1600);
+  font-weight: 400;
+}
+
+
+@media only screen and (min-width: 1440px) and (min-width: 1440px) and (max-width: 1919px) {
+  :root {
+    --container-width: calc(1250px + 150 * ((100vw - 1440px) / (1920 - 1440)));
+  }
+}
