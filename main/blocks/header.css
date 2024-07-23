@@ -16,27 +16,27 @@
 }
 
 .header__logo img {
-  max-width: calc(57px + 95 * (100vw - 320px) / 1600);
-  max-height: calc(36px + 60 * (100vw - 320px) / 1600);
+ max-width: calc(57px + 95 * (100vw - 320px) / 1600);
+  
+ max-height: 100%;
 }
 
 .header__right {
   display: flex;
   align-items: center;
   gap: calc(16px + 46 * (100vw - 320px) / 1600);
-  
 }
 
 .header__contacts {
   display: flex;
-  gap: calc(8px + 41 * (100vw - 320px) / 1600);
+  gap: calc(8px + 46 * (100vw - 320px) / 1600);
   flex-wrap: wrap;
 }
 
-.header__contacts .telephone {
+ .telephone {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 2px;
 }
 
 .header__contact {
@@ -45,15 +45,9 @@
   align-items: center;
 }
 
-.contact_adress {
-  color: black;
-  font-size: calc(8px + 12 * ((100vw - 320px) / 1600));
-  font-weight: 400;
-}
-
-.contact_img img {
-  width: calc(18px + 6*((100vw - 320px) /(1920 - 320)));
-  height: calc(3px + 15 * ((100vw - 320px) / 1600));
+.contact_img  {
+  width: calc(16px + 4*((100vw - 320px) /(1600 - 320)));
+  height: calc(16px + 4 * ((100vw - 320px) / 1600));
 
 }
 
@@ -66,14 +60,15 @@
 .contact_adress img {
   bottom: 20%;
   position: relative;
-  
 }
 
 .contact_text {
   color: black;
-  font-size: calc(8px + 12 * ((100vw - 320px) / 1600));
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
   font-weight: 400;
 }
+
+
 
 .contact_text:hover {
   color: #633F94;
@@ -113,8 +108,8 @@
 }
 
 .close__menu img {
-  width: calc(12px + 60 * ((100vw - 320px) / 1600));
   cursor: pointer;
+  display: block;
 }
 
 .menu__box {
@@ -140,16 +135,21 @@
 .menu__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1100px;
+
 }
 
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  gap: calc(250px + 1250 * ((100vw - 320px) / 1600));
 
+}
 
 .menu_nav {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 
@@ -177,7 +177,8 @@
 }
 
 .nav__items a {
-  font-size: calc(8px + 12 * ((100vw - 320px) / 1600));
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
+
   font-weight: 500;
   color: #000000;
   transition: all 0.4s;
@@ -187,28 +188,67 @@
   color: #7F53BC;
 }
 
-@media only screen and (min-width: 1440px) and (min-width: 1440px) and (max-width: 1919px) {
+/* @media only screen and (min-width: 1440px) and (min-width: 1440px) and (max-width: 1919px) {
   :root {
     --container-width: calc(1250px + 150 * ((100vw - 1440px) / (1920 - 1440)));
   }
-}
+} */
 
-@media only screen and (min-width: 769px) and (max-width: 1400px) {
+@media (max-width: 1400px) {
     .header__container {
       gap: calc(50px + 250 * ((100vw - 320px) / 1600));
     }
+
+  .container {
+    width: calc(100%-35px);
+  }
+
+  .menu__container {
+    width: calc(100%-30px);
+  }
+
+  .menu__header {
+    gap: calc(150px + 1350 * ((100vw - 320px) / 1600));
+  }
 }
 
-@media only screen and (min-width: 629px) and (max-width: 769px) {
+@media (max-width: 1050px) {
+  
+  .menu__container {
+    width: calc(100%-30px);
+  }
+
+  .menu__header {
+    gap: calc(150px + 1350 * ((100vw - 320px) / 1600));
+  }
+  
+}
+
+@media (max-width: 980px) {
+
+  .menu__container {
+    width: calc(100%-30px);
+  }
+
+  .menu__header {
+    gap: calc(150px + 1350 * ((100vw - 320px) / 1600));
+  }
+}
+
+@media (max-width: 770px) {
   .header__container {
     gap: calc(50px + 250 * ((100vw - 320px) / 1600));
   }
   .logo__name {
     display: none;
   }
+  .menu__header {
+    gap: calc(150px + 1350 * ((100vw - 320px) / 1600));
+  }
+  
 }
 
-@media only screen and (min-width:469px) and (max-width: 629px) {
+@media  (max-width: 629px) {
   .header__container {
     gap: calc(50px + 250 * ((100vw - 320px) / 1600));
   }
@@ -218,9 +258,13 @@
   .contact_adress {
     display: none;
   }
+
+  .menu__header {
+    gap: calc(150px + 1350 * ((100vw - 320px) / 1600));
+  }
 }
 
-@media only screen and (min-width:320px) and (max-width: 469px) {
+@media (max-width: 469px) {
   .header__container {
     gap: calc(50px + 250 * ((100vw - 320px) / 1600));
   }
