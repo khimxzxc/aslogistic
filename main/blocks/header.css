@@ -117,6 +117,7 @@
  padding: calc(16px + 23 * (100vw - 320px) / 1080);
  align-items: center;
  justify-content: center;
+ backdrop-filter: blur(11px);
 }
 
 .menu.ok {
