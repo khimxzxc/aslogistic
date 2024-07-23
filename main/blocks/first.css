@@ -1,6 +1,6 @@
 .first {
     display: flex;
-    
+
 }
 
 .first__container {
@@ -61,18 +61,17 @@
 
 .first_text {
    
-    font-size: calc(3px + 13 * ((100vw - 320px) / 1080));
-
+    font-size: 16px;
+    
     font-weight: 500;
     color: #000000;
 }
 
 .container_logo {
     position: absolute;
-    top: -11%;
-    right: -9%;
-    width: calc(201px + 679 * ((100vw - 320px) / 1080));
-
+    top: -12%;
+    right: -2%;
+    width: calc(201px + 679 * ((100vw - 320px) / 1600));
     z-index: 10;
     display: block;
 }
@@ -105,7 +104,7 @@
 }
 
 .button:hover {
-    background: ;
+    background:
 }
 
 
