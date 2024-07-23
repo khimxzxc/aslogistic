@@ -13,11 +13,12 @@ body {
 }
 
 :root {
-  --container-padding: calc(30px + 10 * ((100vw - 320px) / (1920 - 320)));
+  --container-padding: calc(30px + 10 * ((100vw - 320px) / (1600 - 320)));
+  --transition: 0.3s;
 }
 
 .container {
-  width: calc(100% - var(--container-padding));
+  
   margin: 0 auto;
   max-width: var(--container-width);
 }

@@ -13,3 +13,4 @@ window.addEventListener('keydown', (e) => {
 document.getElementById("close").addEventListener("click", function() {
     document.getElementById("menu").classList.remove("ok")
 })
+

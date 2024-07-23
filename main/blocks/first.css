@@ -1,0 +1,136 @@
+.first {
+    display: flex;
+    
+}
+
+.first__container {
+    padding-top: calc(15px + 74 * ((100vw - 320px) / 1600));
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: calc(26px + 133 * ((100vw - 320px) / 1600));
+    
+}
+
+.first_content {
+    position: relative;
+}
+
+.first__top {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.first_content .first__top .first__logo {
+    width: 100%;
+    height: auto;
+}
+
+.first_content .first__top h1 {
+    font-size: calc(4px + 18 * ((100vw - 320px) / 1600));
+    font-weight: 700;
+    color: #000000;
+}
+
+.first__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: calc(8px + 42 * ((100vw - 320px) / 1600));
+    
+}
+
+.first__columns {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    column-gap: calc(15px + 75 * ((100vw - 320px) / 1600));
+    row-gap: calc(5px + 25 * ((100vw - 320px) / 1600));
+}
+
+.first__column {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.first_nomber {
+    font-size: calc(48px + 16*((100vw - 320px)/(1920 - 320)));
+    font-weight: 700;
+    color: #000000;
+}
+
+.first_text {
+   
+    font-size: calc(3px + 13 * ((100vw - 320px) / 1080));
+
+    font-weight: 500;
+    color: #000000;
+}
+
+.container_logo {
+    position: absolute;
+    top: -11%;
+    right: -9%;
+    width: calc(201px + 679 * ((100vw - 320px) / 1080));
+
+    z-index: 10;
+    display: block;
+}
+
+.first__logo {
+    width: calc(px + 0 * ((100vw - 320px) / 1080));
+    display: block;
+}
+
+.button {
+    background: linear-gradient(#8254BF , #633F94  );
+    display: flex;
+    border-radius: 53px;
+    border: 1px solid #633f94;
+    height: calc(13px + 67 * ((100vw - 320px) / 1600));
+    align-items: center;
+    justify-content: center;
+    color:white;
+    gap: calc(14px + 6*((100vw - 320px) /(1920 - 320)));
+    padding-top: 26px;
+    padding-bottom: 29px;
+    padding-inline: calc(32px + 38*((100vw - 320px) /(1920 - 320)));
+    font-size: calc(16px + 4*((100vw - 320px)/(1920 - 320)));
+    align-self: flex-start;
+    font-size: calc(16px + 4*((100vw - 320px)/(1920 - 320)));
+    height: calc(64px + 16*((100vw - 320px) /(1920 - 320)));
+
+    cursor: pointer;
+
+}
+
+.button:hover {
+    background: ;
+}
+
+
+
+@media only screen and (min-width: 1024px) and (max-width:1439px) {
+    .container_logo {
+        width:calc(480px + 400*((100vw - 1024px)/(1440 - 1024)));
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .container_logo {
+        right: calc(-20px + -20*((100vw - 1024px) /(1440 - 1024)));
+    }
+}
+
+@media only screen and (min-width: 599px) and (max-width: 1027px) {
+    .container_logo {
+      z-index: -1;
+      opacity: 50%;
+    }
+
+    .first_content {
+        backdrop-filter: blur(15px);
+        background-color: rgb(red, green, blue);
+    }
+    
+}
