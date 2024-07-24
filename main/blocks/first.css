@@ -4,11 +4,12 @@
 }
 
 .first__container {
-    padding: calc(15px + 74 * ((100vw - 320px) / 1600));
+    padding-top: calc(15px + 74 * ((100vw - 320px) / 1600));
     display: flex;
     position: relative;
-   
-  
+    padding-bottom: 160px;
+    padding-left: calc(15px + 74 * ((100vw - 320px) / 1600));
+    padding-right:calc(15px + 74 * ((100vw - 320px) / 1600));;
 }
 
 .first_content {
