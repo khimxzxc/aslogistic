@@ -20,7 +20,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1400px;
-  width: calc(100%-70px);
+  width: calc(100% - 70px);
   /*max-width: var(--container-width);*/
 }
 
