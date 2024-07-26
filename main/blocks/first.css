@@ -7,7 +7,7 @@
     padding-top: calc(15px + 74 * ((100vw - 320px) / 1600));
     display: flex;
     position: relative;
-    padding-bottom: 160px;
+    padding-bottom: calc(28px + 132 * ((100vw - 320px) / 1600));
     padding-left: calc(15px + 74 * ((100vw - 320px) / 1600));
     padding-right:calc(15px + 74 * ((100vw - 320px) / 1600));;
 }
@@ -39,7 +39,6 @@
 .first__bottom {
     display: flex;
    margin-bottom: 50px;
-  
 }
 
 .first__columns {
@@ -63,10 +62,9 @@
 .container_logo {
     position: absolute;
     top: 0%;
-    right: -2%;
-    
+    right: -2%;   
     width: calc(20px + 800 * ((100vw - 320px) / 1600));
-    height: calc(20px + 800 * ((100vw - 320px) / 1600));
+    height: calc(20px + 700 * ((100vw - 320px) / 1600));
     z-index: 10;
    
 }
@@ -76,11 +74,10 @@
     display: block;
 }
 
-.button {
-    background: linear-gradient(#8254BF , #633F94  );
+ .button {
+    
     display: flex;
-    border-radius: 53px;
-    border: 1px solid #633f94;
+    border-radius: 53px;  
     height: calc(13px + 67 * ((100vw - 320px) / 1600));
     align-items: center;
     justify-content: center;
@@ -93,12 +90,20 @@
     align-self: flex-start;
     font-size: calc(16px + 4*((100vw - 320px)/(1920 - 320)));
     height: calc(64px + 16*((100vw - 320px) /(1920 - 320)));
-
-    cursor: pointer;
-
+    overflow: hidden;
 }
 
+.buttons {
+    background: linear-gradient(130deg, #8254BF 0%, #633F94 100%);
+	background-size: 150%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+   
+}
 
+.buttons:hover {
+    background-position: 350%;
+}
 
 @media (max-width: 1500px) {
 
