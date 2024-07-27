@@ -18,7 +18,7 @@
     padding-top: calc(16px + 40 * ((100vw - 320px) / 1080));
     padding-bottom: calc(25px + 70 * ((100vw - 320px) / 1080));
     row-gap: 70px;
-   
+    
 }
 
 .border__top {
@@ -39,15 +39,28 @@
     cursor: pointer;
 }
 
-.border__close span {
+.border__close {
     font-weight: 700;
     color:#000000;
     font-size: 20px;
 }
 
+.border__open {
+    display: none;
+    opacity: 0;
+}
+
+#border__closeone {
+    display: block;
+}
+
 .border__bottom {
-    
     border-radius: 40px;
+    max-width: 1920px;
+    opacity: 1;
+    display: block;
+    visibility: visible;
+    overflow: hidden;
 }
 
 .rent__cards {
@@ -68,16 +81,19 @@
     border: 1px solid  #ffffff;
     background: #FFFFFF;
     box-shadow: 1px 1px 10px #E5E5E5;
-    padding: calc(15px + 10 * ((100vw - 320px) / 1600)); 
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-wrap: wrap;    
     color: #000000;  
     transition: background-color 0.3s ease, transform 0.3s ease;
-    flex-wrap: wrap;
     height: 100%;
-
+    padding-bottom: 22px;
+    
 }
 
 .rent__card .threecard {
-    row-gap: calc(13px + 65 * ((100vw - 320px) / 1600));
+    row-gap: calc(13px + 75 * ((100vw - 320px) / 1600));
 }
 
 
@@ -115,4 +131,21 @@
 
 .rent__card a:hover .oneicon path {
     fill: #633F94; 
+}
+
+.border__bottom.close {
+    display: none;
+    visibility: hidden;
+    max-width: 0px;
+    opacity: 0;
+}
+
+.border__open.close {
+    display: block;
+    opacity: 1;
+}
+
+#border__closeone.open {
+    display: none;
+    opacity: 0;
 }

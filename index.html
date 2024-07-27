@@ -128,13 +128,17 @@
           <div class="border__content">
             <div class="border__top">
               <div class="border__title">АРЕНДА</div>
-              <div class="border__close">
-                <span>Свернуть</span>
-                <img src="image/icons/top.svg" alt="button" loading="lazy">
-              </div>
-            </div>
+              <button class="border__close" type="button" id="border__close">
+                <span class="border__close--one" id="border__closeone">Свернуть</span>
+                <span class="border__open" id="border__open">Развернуть</span>
+                <svg class="border__close-svg" width="13" height="28" viewBox="0 0 13 28" fill="none" >
+                  <path d="M7.5 2.40148L7.5 27.5985C7.5 27.8394 7.1 28 6.5 28C5.9 28 5.5 27.8394 5.5 27.5985L5.5 2.40148C5.5 2.16059 5.9 2 6.5 2C7.1 2 7.5 2.16059 7.5 2.40148Z" fill="black"/>
+                  <path d="M12.5 6C12.5 6.3 12.4 6.5 12.2 6.7C11.8 7.1 11.2 7.1 10.8 6.7L6.5 2.4L2.2 6.7C1.8 7.1 1.2 7.1 0.8 6.7C0.4 6.3 0.4 5.7 0.8 5.3L5.8 0.299999C6.2 -0.100001 6.8 -0.100001 7.2 0.299999L12.2 5.3C12.4 5.5 12.5 5.7 12.5 6Z" fill="black"/>
+                  </svg>
+              </button>
+            </div> 
 
-            <div class="border__bottom">
+            <div class="border__bottom" id="border__bottom">
               <div class="rent__cards">
 
                 <div class="rent__card">
@@ -149,7 +153,7 @@
                         
                     </div>
                     <div class="card__bottom">
-                      Склады 
+                      Склады <br>
                       категории А
                     </div>
                   </a>
@@ -166,7 +170,7 @@
                         </svg>
                     </div>
                     <div class="card__bottom">
-                      Склады
+                      Склады <br>
                       категории B
                     </div>
                   </a>
@@ -205,7 +209,7 @@
                         </svg> 
                     </div>
                     <div class="card__bottom">
-                      Рефрижераторные
+                      Рефрижераторные <br>
                       контейнеры
                     </div>
                   </a>
@@ -224,7 +228,7 @@
                         </svg>
                     </div>
                     <div class="card__bottom">
-                      Территория для
+                      Территория для <br> 
                       размещения
                     </div>
                   </a>
@@ -247,7 +251,7 @@
                         </svg>
                     </div>
                     <div class="card__bottom">
-                      Индивидуальное
+                      Индивидуальное <br>
                       хранение вещей
                     </div>
                   </a>
@@ -291,19 +295,31 @@
                         </svg>
                     </div>
                     <div class="card__bottom">
-                      40-футовые
+                      40-футовые <br>
                       контейнеры
                     </div>
                   </a>
                 </div>
               </div>
 
-            </div>
+
           </div>
 
-          <div class="border__content-close">
-            
-          </div>
+          
+         <!-- <div class="border__content-close" id="border__content-close">
+            <div class="border__content-box">
+              <div class="border__top">
+                <div class="border__title">АРЕНДА</div>
+                <div class="border__close" id="border__close">
+                  <span>Свернуть</span>
+                  <img src="image/icons/top.svg" alt="button" loading="lazy">
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>-->
+
+      
         </div>
       </section>
     </main>
