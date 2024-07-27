@@ -47,7 +47,6 @@
 
 .border__open {
     display: none;
-    opacity: 0;
 }
 
 #border__closeone {
@@ -56,11 +55,9 @@
 
 .border__bottom {
     border-radius: 40px;
-    max-width: 1920px;
-    opacity: 1;
     display: block;
     visibility: visible;
-    overflow: hidden;
+    opacity: 1;
 }
 
 .rent__cards {
@@ -135,17 +132,14 @@
 
 .border__bottom.close {
     display: none;
-    visibility: hidden;
-    max-width: 0px;
     opacity: 0;
+    visibility: hidden;
 }
 
 .border__open.close {
     display: block;
-    opacity: 1;
 }
 
 #border__closeone.open {
     display: none;
-    opacity: 0;
 }
