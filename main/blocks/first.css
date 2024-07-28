@@ -75,7 +75,6 @@
 }
 
  .button {
-    
     display: flex;
     border-radius: 53px;  
     height: calc(13px + 67 * ((100vw - 320px) / 1600));
@@ -88,8 +87,6 @@
     padding-inline: calc(32px + 38*((100vw - 320px) /(1920 - 320)));
     font-size: calc(16px + 4*((100vw - 320px)/(1920 - 320)));
     align-self: flex-start;
-    font-size: calc(16px + 4*((100vw - 320px)/(1920 - 320)));
-    height: calc(64px + 16*((100vw - 320px) /(1920 - 320)));
     overflow: hidden;
 }
 
@@ -98,7 +95,6 @@
 	background-size: 150%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.5s;
-   
 }
 
 .buttons:hover {
