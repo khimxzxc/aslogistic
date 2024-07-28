@@ -3,8 +3,7 @@
 .rent__container {
     margin-bottom: calc(8px + 10 * ((100vw - 320px) / 1600));
     padding-right: calc(10px + 90 * ((100vw - 320px) / 1600));
-    padding-left: calc(10px + 90 * ((100vw - 320px) / 1600));
-    
+    padding-left: calc(10px + 90 * ((100vw - 320px) / 1600));  
 }
 
 .border__content {
@@ -29,7 +28,8 @@
 
 .border__title  {
     font-weight: 700;
-    font-size: calc(15px + 33 * ((100vw - 320px) / 1600));
+    font-size: calc(20px + 28 * ((100vw - 320px) / 1600));
+
     color: #000000;
 }
 
@@ -37,12 +37,13 @@
     display: flex;
     gap: 10px;
     cursor: pointer;
+    align-items: center;
 }
 
 .border__close {
     font-weight: 700;
     color:#000000;
-    font-size: 20px;
+    font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
 }
 
 .border__open {
@@ -142,4 +143,26 @@
 
 #border__closeone.open {
     display: none;
+   
+}
+
+
+@media (max-width: 708px) {
+    .rent__card a {
+        align-items: center;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .rent__container {
+        width: calc(100% - 35px);
+    }
+}
+
+@media (max-width: 350px) {
+  
+    .rent__container {
+        width: calc(100% - 20px);
+    }
 }

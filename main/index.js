@@ -46,22 +46,6 @@ document.getElementById("border__closeone").addEventListener("click", function()
     document.getElementById("border__bottom").classList.add("close")
 })
 
-document.getElementById("border__close").addEventListener("click", function() {
-    document.getElementById("border__open").classList.add("close")
-})
-
-document.getElementById("border__close").addEventListener("click", function() {
-    document.getElementById("border__closeone").classList.add("open")
-})
-
-
-document.getElementById("border__open").addEventListener("click", function() {
-    document.getElementById("border__bottom").classList.remove("close")
-})
-
-document.getElementById("border__open").addEventListener("click", function() {
-    document.getElementById("border__close").classList.remove("open")
-})
 
 /*window.addEventListener('keydown', (e) => {
     if (e.key === "Escape") {
