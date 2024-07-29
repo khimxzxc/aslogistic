@@ -11,32 +11,31 @@
 .hostel--content {
     display: flex;
     gap: 5px;
-   
+    
 }
 
 .hostel__left {
-    row-gap: 40px;
+    row-gap: calc(20px + 20 * ((100vw - 320px) / 1600));
     display: flex;
     flex-direction: column;
 }
 
 .hostel__title {
     font-weight: 700;
-    font-size: 32px;
+    font-size: calc(16px + 16 * ((100vw - 320px) / 1600));
     color: #000000;
 }
 
 .hostel__info {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: calc(8px + 2 * ((100vw - 320px) / 1600));
 }
 
 .hostel__info--text {
     font-weight: 400;
-    font-size: 20px;
+    row-gap: calc(14px + 6 * ((100vw - 320px) / 1600));
     color: #000000;
-    
 }
 
 .hostel__info--item {
@@ -55,14 +54,13 @@
     font-weight: 700;
     font-size: 20px;
     color: #000000;
-    margin-bottom: 50px;
+    margin-bottom: calc(10px + 40 * ((100vw - 320px) / 1600));
 }
 
 .hostel__buttons {
     display: flex;
     gap: calc(12px + 8*((100vw - 320px) /(1920 - 320)));
     flex-wrap: wrap;
-
 }
 
 .button {
@@ -71,18 +69,16 @@
     height: calc(13px + 67 * ((100vw - 320px) / 1600));
     align-items: center;
     justify-content: center;
+    color:white;
     gap: calc(14px + 6*((100vw - 320px) /(1920 - 320)));
-    padding-top: 26px;
-    padding-bottom: 29px;
     padding-inline: calc(32px + 38*((100vw - 320px) /(1920 - 320)));
     font-size: calc(16px + 4*((100vw - 320px)/(1920 - 320)));
     align-self: flex-start;
-    font-size: calc(16px + 4*((100vw - 320px)/(1920 - 320)));
-    
+    overflow: hidden;
 }
 
 .btn {
-    background: linear-gradient(130deg, #ffffff 0%, #ffffff 100%);
+    background: linear-gradient(130deg, #ffffff 0%, #D9D9D9 100%);
 	background-size: 150%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.5s;
@@ -96,7 +92,13 @@
 .hostel__right {
     display: flex;
     flex-direction: column;
-    gap: calc(14px + 11*((100vw - 320px) /(1920 - 320)));
-    
+    gap: calc(14px + 11*((100vw - 320px) /(1920 - 320)));  
 }
+
+.hostel__top img {
+    width: calc(120px + 400 * ((100vw - 320px) / 1600));
+    height: calc(150px + 300 * ((100vw - 320px) / 1600));
+    border-radius: 40px;
+}
+
 
