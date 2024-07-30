@@ -2,8 +2,8 @@
 
 .rent__container {
     margin-bottom: calc(8px + 10 * ((100vw - 320px) / 1600));
-    padding-right: calc(10px + 90 * ((100vw - 320px) / 1600));
-    padding-left: calc(10px + 90 * ((100vw - 320px) / 1600));  
+    padding-right: calc(10px + 70 * ((100vw - 320px) / 1600));
+    padding-left: calc(10px + 70 * ((100vw - 320px) / 1600)); 
 }
 
 .border__content {

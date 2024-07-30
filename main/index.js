@@ -65,3 +65,12 @@ window.addEventListener('keydown', (e) => {
     }
 });*/
 
+new Swiper('.swipper', {
+
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	  },
+});
+
+

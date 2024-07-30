@@ -62,7 +62,7 @@
 .container_logo {
     position: absolute;
     top: 0%;
-    right: -2%;   
+    right: 10%;   
     width: calc(20px + 800 * ((100vw - 320px) / 1600));
     height: calc(20px + 700 * ((100vw - 320px) / 1600));
     z-index: 10;

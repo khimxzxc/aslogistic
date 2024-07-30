@@ -3,14 +3,15 @@
 }
 
 .hostel__container {
-    padding-right: calc(10px + 90 * ((100vw - 320px) / 1600));
-    padding-left: calc(10px + 90 * ((100vw - 320px) / 1600));  
-
+    padding-right: calc(10px + 70 * ((100vw - 320px) / 1600));
+    padding-left: calc(10px + 70 * ((100vw - 320px) / 1600));  
+    padding-bottom: calc(36px + 124 * ((100vw - 320px) / 1600));
 }
 
 .hostel--content {
     display: flex;
-    gap: 5px;
+    gap: calc(10px + 20 * ((100vw - 320px) / 1600));
+
     
 }
 
@@ -34,7 +35,7 @@
 
 .hostel__info--text {
     font-weight: 400;
-    row-gap: calc(14px + 6 * ((100vw - 320px) / 1600));
+    font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
     color: #000000;
 }
 
@@ -52,7 +53,7 @@
     display: flex;
     flex-direction: column;
     font-weight: 700;
-    font-size: 20px;
+    font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
     color: #000000;
     margin-bottom: calc(10px + 40 * ((100vw - 320px) / 1600));
 }
@@ -60,7 +61,7 @@
 .hostel__buttons {
     display: flex;
     gap: calc(12px + 8*((100vw - 320px) /(1920 - 320)));
-    flex-wrap: wrap;
+    
 }
 
 .button {
@@ -72,9 +73,7 @@
     color:white;
     gap: calc(14px + 6*((100vw - 320px) /(1920 - 320)));
     padding-inline: calc(32px + 38*((100vw - 320px) /(1920 - 320)));
-    font-size: calc(16px + 4*((100vw - 320px)/(1920 - 320)));
-    align-self: flex-start;
-    overflow: hidden;
+    font-size: calc(14px + 6*((100vw - 320px)/(1920 - 320)));
 }
 
 .btn {
@@ -97,8 +96,29 @@
 
 .hostel__top img {
     width: calc(120px + 400 * ((100vw - 320px) / 1600));
-    height: calc(150px + 300 * ((100vw - 320px) / 1600));
+    height: calc(120px + 400 * ((100vw - 320px) / 1600));
     border-radius: 40px;
+}ш
+
+.swipper {
+    display: grid;
+    
+    position: relative;
 }
 
+.swiper__wrapper {
+    display: flex;
+    gap: 14px;
+    min-width: 0;
+}
 
+.swiper__wrapper img {
+    border-radius: 12px;
+    width: calc(30px + 90 * ((100vw - 320px) / 1600));
+    height: calc(30px + 90 * ((100vw - 320px) / 1600));
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    position: absolute;
+}
