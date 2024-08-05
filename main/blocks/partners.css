@@ -47,10 +47,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.rgbrand {
-    margin-right: 60px;
+    justify-content: space-between;
 }
 
 .partners__buttons {

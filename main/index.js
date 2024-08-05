@@ -46,6 +46,12 @@ document.getElementById("border__closeone").addEventListener("click", function()
     document.getElementById("border__bottom").classList.add("close")
 })
 
+// document.querySelectorAll('.border__close--one').forEach(elem => {
+// 	elem.addEventListener('click', () => {
+		
+// 	})
+// })
+
 
 /*window.addEventListener('keydown', (e) => {
     if (e.key === "Escape") {
