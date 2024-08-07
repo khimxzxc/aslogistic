@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="main/normalize.css">
     <link rel="stylesheet" href="main/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
+
     <title>AS Logistic</title>
 </head>
 <body>
@@ -127,20 +130,20 @@
 
       <section class="rent">
         <div class="rent__container container">
-          <div class="border__content">
-            <div class="border__top">
-              <div class="border__title">АРЕНДА</div>
-              <button class="border__close" type="button" id="border__close">
-                <span class="border__close--one" id="border__closeone">Свернуть</span>
-                <span class="border__open" id="border__open">Развернуть</span>
-                <svg class="border__close-svg" width="13" height="28" viewBox="0 0 13 28" fill="none" >
-                  <path d="M7.5 2.40148L7.5 27.5985C7.5 27.8394 7.1 28 6.5 28C5.9 28 5.5 27.8394 5.5 27.5985L5.5 2.40148C5.5 2.16059 5.9 2 6.5 2C7.1 2 7.5 2.16059 7.5 2.40148Z" fill="black"/>
-                  <path d="M12.5 6C12.5 6.3 12.4 6.5 12.2 6.7C11.8 7.1 11.2 7.1 10.8 6.7L6.5 2.4L2.2 6.7C1.8 7.1 1.2 7.1 0.8 6.7C0.4 6.3 0.4 5.7 0.8 5.3L5.8 0.299999C6.2 -0.100001 6.8 -0.100001 7.2 0.299999L12.2 5.3C12.4 5.5 12.5 5.7 12.5 6Z" fill="black"/>
-                  </svg>
+          <div class="accordion">
+            <div class="accordion__header">
+              <div class="accordion__title">АРЕНДА</div>
+              <button class="accordion__toggle" type="button">
+                <span class="accordion__toggle-text">Свернуть</span>
+                <span class="accordion__toggle-close">Развернуть</span>
+                <svg class="accordion__toggle-icon" width="14" height="28" viewBox="0 0 14 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.49707 26.8113L5.49707 0.6452C5.49707 0.395043 5.89707 0.228271 6.49707 0.228271C7.09707 0.228271 7.49707 0.395043 7.49707 0.6452L7.49707 26.8113C7.49707 27.0615 7.09707 27.2283 6.49707 27.2283C5.89707 27.2283 5.49707 27.0615 5.49707 26.8113Z" fill="black"/>
+                  <path d="M0.518555 21.4572C0.518555 21.1447 0.622721 20.9364 0.831054 20.728C1.24772 20.3114 1.87272 20.3114 2.28939 20.728L6.76855 25.2072L11.2477 20.728C11.6644 20.3114 12.2894 20.3114 12.7061 20.728C13.1227 21.1447 13.1227 21.7697 12.7061 22.1864L7.49772 27.3947C7.08105 27.8114 6.45606 27.8114 6.03939 27.3947L0.831054 22.1864C0.622721 21.978 0.518555 21.7697 0.518555 21.4572Z" fill="black"/>
+                  </svg>                  
               </button>
             </div> 
 
-            <div class="border__bottom" id="border__bottom">
+            <div class="accordion__content">
               <div class="rent__cards">
 
                 <div class="rent__card">
@@ -303,29 +306,27 @@
                   </a>
                 </div>
               </div>
-
-
           </div>
         </div>
         </div>
       </section>
 
-      <section class="services">
+      <section class="rent services">
         <div class="rent__container container">
-          <div class="border__content ">
-            <div class="border__top">
-              <div class="border__title">УСЛУГИ</div>
-              <button class="border__close" type="button" id="border__close">
-                <span class="border__close--one" id="border__closeone2">Свернуть</span>
-                <span class="border__open" id="border__open">Развернуть</span>
-                <svg class="border__close-svg" width="13" height="28" viewBox="0 0 13 28">
-                  <path d="M7.5 2.40148L7.5 27.5985C7.5 27.8394 7.1 28 6.5 28C5.9 28 5.5 27.8394 5.5 27.5985L5.5 2.40148C5.5 2.16059 5.9 2 6.5 2C7.1 2 7.5 2.16059 7.5 2.40148Z" fill="black"/>
-                  <path d="M12.5 6C12.5 6.3 12.4 6.5 12.2 6.7C11.8 7.1 11.2 7.1 10.8 6.7L6.5 2.4L2.2 6.7C1.8 7.1 1.2 7.1 0.8 6.7C0.4 6.3 0.4 5.7 0.8 5.3L5.8 0.299999C6.2 -0.100001 6.8 -0.100001 7.2 0.299999L12.2 5.3C12.4 5.5 12.5 5.7 12.5 6Z" fill="black"/>
-                  </svg>
+          <div class="accordion">
+            <div class="accordion__header services-content">
+              <div class="accordion__title">УСЛУГИ</div>
+              <button class="accordion__toggle" type="button">
+                <span class="accordion__toggle-text">Свернуть</span>
+                <span class="accordion__toggle-close">Развернуть</span>
+                <svg class="accordion__toggle-icon" width="14" height="28" viewBox="0 0 14 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.49707 26.8113L5.49707 0.6452C5.49707 0.395043 5.89707 0.228271 6.49707 0.228271C7.09707 0.228271 7.49707 0.395043 7.49707 0.6452L7.49707 26.8113C7.49707 27.0615 7.09707 27.2283 6.49707 27.2283C5.89707 27.2283 5.49707 27.0615 5.49707 26.8113Z" fill="black"/>
+                  <path d="M0.518555 21.4572C0.518555 21.1447 0.622721 20.9364 0.831054 20.728C1.24772 20.3114 1.87272 20.3114 2.28939 20.728L6.76855 25.2072L11.2477 20.728C11.6644 20.3114 12.2894 20.3114 12.7061 20.728C13.1227 21.1447 13.1227 21.7697 12.7061 22.1864L7.49772 27.3947C7.08105 27.8114 6.45606 27.8114 6.03939 27.3947L0.831054 22.1864C0.622721 21.978 0.518555 21.7697 0.518555 21.4572Z" fill="black"/>
+                  </svg>                  
               </button>
-            </div> 
+            </div>  
 
-            <div class="border__bottom" id="border__bottom">
+            <div class="accordion__content">
               <div class="rent__cards">
 
                 <div class="rent__card">
@@ -428,19 +429,19 @@
 
       <section class="hostel">
         <div class="hostel__container container">
-          <div class="border__content">
-            <div class="border__top hostel--top">
-              <div class="border__title">ХОСТЕЛ</div>
-              <button class="border__close" type="button" id="border__close">
-                <span class="border__close--one" id="border__closeone">Свернуть</span>
-                <span class="border__open" id="border__open">Развернуть</span>
-                <svg class="border__close-svg" width="13" height="28" viewBox="0 0 13 28">
-                  <path d="M7.5 2.40148L7.5 27.5985C7.5 27.8394 7.1 28 6.5 28C5.9 28 5.5 27.8394 5.5 27.5985L5.5 2.40148C5.5 2.16059 5.9 2 6.5 2C7.1 2 7.5 2.16059 7.5 2.40148Z" fill="black"/>
-                  <path d="M12.5 6C12.5 6.3 12.4 6.5 12.2 6.7C11.8 7.1 11.2 7.1 10.8 6.7L6.5 2.4L2.2 6.7C1.8 7.1 1.2 7.1 0.8 6.7C0.4 6.3 0.4 5.7 0.8 5.3L5.8 0.299999C6.2 -0.100001 6.8 -0.100001 7.2 0.299999L12.2 5.3C12.4 5.5 12.5 5.7 12.5 6Z" fill="black"/>
-                  </svg>
+          <div class="accordion">
+            <div class="accordion__header">
+              <div class="accordion__title">ХОСТЕЛ</div>
+              <button class="accordion__toggle" type="button">
+                <span class="accordion__toggle-text">Свернуть</span>
+                <span class="accordion__toggle-close">Развернуть</span>
+                <svg class="accordion__toggle-icon" width="14" height="28" viewBox="0 0 14 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.49707 26.8113L5.49707 0.6452C5.49707 0.395043 5.89707 0.228271 6.49707 0.228271C7.09707 0.228271 7.49707 0.395043 7.49707 0.6452L7.49707 26.8113C7.49707 27.0615 7.09707 27.2283 6.49707 27.2283C5.89707 27.2283 5.49707 27.0615 5.49707 26.8113Z" fill="black"/>
+                  <path d="M0.518555 21.4572C0.518555 21.1447 0.622721 20.9364 0.831054 20.728C1.24772 20.3114 1.87272 20.3114 2.28939 20.728L6.76855 25.2072L11.2477 20.728C11.6644 20.3114 12.2894 20.3114 12.7061 20.728C13.1227 21.1447 13.1227 21.7697 12.7061 22.1864L7.49772 27.3947C7.08105 27.8114 6.45606 27.8114 6.03939 27.3947L0.831054 22.1864C0.622721 21.978 0.518555 21.7697 0.518555 21.4572Z" fill="black"/>
+                  </svg>                  
               </button>
             </div> 
-            <div class="hostel--content">
+            <div class="accordion__content hostel--content">
               <div class="hostel__left">
                 <div class="hostel__title">
                   Уютный хостел в Павлодаре <br>
@@ -536,40 +537,40 @@
                     <img src="image/hosteltop.jpg" alt="hostel_image" loading="lazy" width="520" height="450">
                   </div>
 
-                  <div class="swipper">
+                  <div class="hostel-swipper">
 
-                    <div class="swiper__wrapper">
+                    <div class="hostel__swiper--wrapper">
 
-                      <div class="swiper__slide">
-                          <div class="swiper_slider-img">
+                      <div class="hostel__swiper--slide">
+                          <div class="hostelswiper_slider-img">
                             <img src="image/slider-1.jpg" alt="image" loading="lazy" >
                           </div>
                       </div>
 
-                      <div class="swiper__slide">
-                        <div class="swiper_slider-img">
+                      <div class="hostel__swiper--slide">
+                        <div class="hostelswiper_slider-img">
                           <img src="image/slider-2.jpg" alt="image" loading="lazy">
                         </div>
                     </div>
 
-                    <div class="swiper__slide">
-                      <div class="swiper_slider-img">
+                    <div class="hostel__swiper--slide">
+                      <div class="hostelswiper_slider-img">
                         <img src="image/slider-3.jpg" alt="image" loading="lazy">
                       </div>
                   </div>
 
-                  <div class="swiper__slide">
-                    <div class="swiper_slider-img">
+                  <div class="hostel__swiper--slide">
+                    <div class="hostelswiper_slider-img">
                       <img src="image/slider-4.jpg" alt="image" loading="lazy">
                     </div>
                 </div>
 
                     </div>
 
-                    <div class="swiper-button-prev">
+                    <div class="hostel__swipers-button-prev">
                            
                     </div>
-                    <div class="swiper-button-next">
+                    <div class="hostel__swipers-button-next">
                     
                     </div>
                     
@@ -625,10 +626,10 @@
       </div>
             </div>
 
-            <div class="swiper-button-prev">
+            <div class="swipers-button-prev">
                    
             </div>
-            <div class="swiper-button-next">
+            <div class="swipers-button-next">
             
             </div>
             
@@ -643,11 +644,92 @@
       </section>
 
       <section class="logistic">
-          
+          <div class="logistic__container container">
+            <div class="logistic__content">
+
+              <div class="header__logo logistic--logo">
+                <a href="/" class="header__logo logistic--logo">
+                  <img class="logo__image" src="image/logo.svg" alt="AS Logistic" width="72" height="72" loading="lazy">
+                  <img class="logo__name" src="image/whitenamelogo.svg" alt="AS Logistic" width="158" height="31" loading="lazy"> 
+                </a>
+              </div>
+
+                <div class="logistic__title">
+                  <h2>СКЛАДСКОЙ ЛОГИСТИЧЕСКИЙ ТЕРМИНАЛ</h2>
+                </div>
+
+                <div class="logistic__text">
+                  <p class="logistic__text--one">
+                    ТОО «AS Logistic» предлагает в аренду складские площади категории "А" с ж/д пандусами, с общей площадью <br>
+                    до 30 000 кв.м., офисные помещения, металлические контейнеры, морозильные камеры, ж/д тупик, территорию для размещения, овощехранилище, разгрузочный автопандус.
+                  </p>
+
+                  <p class="logistic__text--one">
+                   Наша Компания осуществляет свою деятельность в сфере складской логистики более 15 лет. К Вашим услугам <br> отапливаемые и не отапливаемые помещения, а также открытые площадки для размещения, услуги подачи и уборки <br> вагонов к фронтам погрузки/выгрузки локомотивом, услуги индивидуального хранения вещей, услуги авто весов и <br> ж/д весов, услуги разгрузки и погрузки товаров.
+                  </p>
+
+                  <p class="logistic__text--one">
+                    Наш бизнес организован на профессионально управляемой территории, на которой сконцентрированы офисные <br> здания и складские комплексы, где Вы сможете найти уникальное для себя комбинированное предложение: "офис + <br> склад под ключ" в едином комплексе. На нашей территории разместили свои офисы и склады более 50 компаний. <br> Такое окружение и развитая инфраструктура позволяет комфортно себя чувствовать и эффективно вести бизнес <br> любой компании.
+                  </p>
+
+                  <p class="logistic__text--one">
+                    Офисные помещения со свежим ремонтом, оснащены современной системой кондиционирования, интернетом, <br> видеонаблюдением, телефонной связью.
+                  </p>
+                </div>
+
+                <div class="logistic__images">
+               
+                    <div class="caption__left">
+                      <div class="caption-one">
+                        <a href="image/captionone.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                          <img src="image/captionminione.png" />
+                        </a>
+                      </div>
+                    </div>
+
+                      <div class="caption__right">
+                        <div class="caption-two">
+                          <a href="image/captiontwo.jpg" data-fancybox="gallery" data-caption="Caption #2">
+                            <img src="image/captionminitwo.png" />
+                          </a>
+                        </div>
+    
+                        <div class="caption-one">
+                          <a href="image/captionfour.jpg" data-fancybox="gallery" data-caption="Caption #3">
+                            <img src="image/captionminifour.png" />
+                          </a>
+                        </div>
+    
+                        <div class="caption-one">
+                          <a href="image/captionthree.jpg" data-fancybox="gallery" data-caption="Caption #4">
+                            <img src="image/captionminithree.png" />
+                          </a>
+                        </div>
+    
+                        <div class="caption-one">
+                          <a href="image/captionfive.jpg" data-fancybox="gallery" data-caption="Caption #5">
+                            <img src="image/captionminifivepng.png" />
+                          </a>
+                        </div>
+                        
+                      </div>
+     
+                </div>
+               
+                  <button class="button logistic--buttons" type="button">Подробнее о компании
+                    <img src="image/icons/rightblack.svg" alt=""> 
+                  </button>
+                
+            </div>
+       
+          </div>
+       
+          <img class="logistic__track" src="image/logistictrack.png" alt="" width="1300" height="915">
       </section>
     </main>
     
     <script src="main/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 </body>
 </html>

@@ -1,0 +1,75 @@
+.logistic {
+    position: relative;
+}
+
+.logistic__container {
+    padding-top: 50px;
+    padding-bottom: 53px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background: linear-gradient(1deg, #7449AF 80%, #633F94 100%); 
+    border-radius: 40px;
+    width: calc(100% - 120px);
+    backdrop-filter: blur(11px);
+    opacity: 90%;
+}
+
+.logistic__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.logistic--logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logistic__title h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.logistic__text p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.logistic__text p:last-child {
+    margin-bottom: 0px;
+}
+
+.logistic__images {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.caption__right {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    margin-bottom: 57px;
+}
+
+.logistic--buttons {
+    padding-top: 33px;
+    padding-bottom: 33px;
+    padding-inline: calc(32px + 38*((100vw - 320px) /(1920 - 320)));
+    background: #FFFFFF;
+    color: #000000;
+}
+
+.logistic__track {
+    position: absolute;
+    z-index: -10;
+    overflow: hidden;
+    top: -100;
+    left: 0;
+}

@@ -21,7 +21,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1920px;
-  width: calc(100% - 30px);
+  width: calc(100% - 20px);
   /*max-width: var(--container-width);*/
 }
 

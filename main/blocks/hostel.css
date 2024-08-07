@@ -10,9 +10,7 @@
 
 .hostel--content {
     display: flex;
-    gap: calc(10px + 20 * ((100vw - 320px) / 1600));
-
-    
+    gap: calc(10px + 20 * ((100vw - 320px) / 1600)); 
 }
 
 .hostel__left {
@@ -98,21 +96,20 @@
     width: calc(120px + 400 * ((100vw - 320px) / 1600));
     height: calc(120px + 400 * ((100vw - 320px) / 1600));
     border-radius: 40px;
-}ш
+}
 
-.swipper {
-    display: grid;
-    
+.hostel-swipper {
+    display: grid; 
     position: relative;
 }
 
-.swiper__wrapper {
+.hostel__swiper--wrapper {
     display: flex;
     gap: 14px;
     min-width: 0;
 }
 
-.swiper__wrapper img {
+.hostel__swiper--wrapper img {
     border-radius: 12px;
     width: calc(30px + 90 * ((100vw - 320px) / 1600));
     height: calc(30px + 90 * ((100vw - 320px) / 1600));
