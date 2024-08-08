@@ -8,7 +8,7 @@
     padding-bottom: 142px;
     display: flex;
     flex-direction: column;
-    gap: 59px; 
+    gap: calc(18px + 41 * ((100vw - 320px) / 1600));
 }
 
 .partners__title {
@@ -37,17 +37,50 @@
 .partners-swipper {
     background: #FFFFFF;
     border-radius: 40px;
-    padding-top: 58px;
-    padding-left: 85px;
-    padding-right: 84px;
-    padding-bottom: 67px;
+    padding-top: calc(17px + 41 * ((100vw - 320px) / 1600));
+    padding-left: calc(15px + 70 * ((100vw - 320px) / 1600));
+    padding-right: calc(15px + 70 * ((100vw - 320px) / 1600));
+    padding-bottom: calc(11px + 56 * ((100vw - 320px) / 1600));
+    position: relative;
 }
 
 .partners-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
     align-items: center;
-    gap: 10px;
-    justify-content: space-between;
+    column-gap: 40px;
+  
+}
+
+ /*.partners_slider-img img {
+    margin-right: calc(8px + 32 * ((100vw - 320px) / 1600));
+    max-width: 100%;
+}*/
+
+.partners_slider-img .rgbrands {
+    margin-right: calc(10px + 50 * ((100vw - 320px) / 1600));
+}
+
+.partners__swipers-button-prev, .partners__swipers-button-next {
+    border-radius: 40px;
+    background: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid #ffffff;
+}
+
+.partners__swipers-button-prev {
+    position: absolute;
+    left: -35px;
+    top: 120px;
+}
+
+.partners__swipers-button-next {
+    position: absolute;
+    right: -35px;
+    top: 120px;
 }
 
 .partners__buttons {

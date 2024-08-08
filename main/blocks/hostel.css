@@ -9,7 +9,7 @@
 }
 
 .hostel--content {
-    display: flex;
+    display: none;
     gap: calc(10px + 60 * ((100vw - 320px) / 1600)); 
 }
 
@@ -148,4 +148,9 @@
 
 .left--btn, .right--btn {
     vertical-align: middle;
+}
+
+.hostel--content.active {
+    display: flex;
+    gap: calc(10px + 60 * ((100vw - 320px) / 1600)); 
 }
