@@ -10,7 +10,7 @@
 
 .hostel--content {
     display: flex;
-    gap: calc(10px + 20 * ((100vw - 320px) / 1600)); 
+    gap: calc(10px + 60 * ((100vw - 320px) / 1600)); 
 }
 
 .hostel__left {
@@ -70,7 +70,10 @@
     justify-content: center;
     color:white;
     gap: calc(14px + 6*((100vw - 320px) /(1920 - 320)));
-    padding-inline: calc(32px + 38*((100vw - 320px) /(1920 - 320)));
+    padding-top: 33px;
+    padding-bottom: 33px;
+    padding-right: 23px;
+    padding-left: 33px;
     font-size: calc(14px + 6*((100vw - 320px)/(1920 - 320)));
 }
 
@@ -89,13 +92,14 @@
 .hostel__right {
     display: flex;
     flex-direction: column;
-    gap: calc(14px + 11*((100vw - 320px) /(1920 - 320)));  
+    gap: calc(14px + 11*((100vw - 320px) /(1920 - 320)));   
 }
 
 .hostel__top img {
-    width: calc(120px + 400 * ((100vw - 320px) / 1600));
-    height: calc(120px + 400 * ((100vw - 320px) / 1600));
+    overflow: hidden;
     border-radius: 40px;
+    object-fit: cover;
+    max-width: 100%;
 }
 
 .hostel-swipper {
@@ -109,13 +113,39 @@
     min-width: 0;
 }
 
-.hostel__swiper--wrapper img {
+.hostel__swiper--slide img {
     border-radius: 12px;
-    width: calc(30px + 90 * ((100vw - 320px) / 1600));
-    height: calc(30px + 90 * ((100vw - 320px) / 1600));
+    max-width: 100%;
+    object-fit: cover;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
+.hostel__swipers-button-prev, .hostel__swipers-button-next {
+    border-radius: 40px;
+    background: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid #ffffff;
+}
+
+.hostel__swipers-button-prev {
     position: absolute;
+    left: -35px;
+    top: 30px;
+}
+
+.hostel__swipers-button-next {
+    position: absolute;
+    right: -35px;
+    top: 30px;
+}
+
+.hostel-btn {
+    text-decoration: none;
+    color: inherit;
+}
+
+.left--btn, .right--btn {
+    vertical-align: middle;
 }
