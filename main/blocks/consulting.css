@@ -1,0 +1,56 @@
+.consulting {
+    display: flex;
+}
+
+.consulting__container {
+    padding-left: calc(20px + 140 * ((100vw - 320px) / 1600));
+    padding-right: calc(20px + 140 * ((100vw - 320px) / 1600)); 
+    margin-bottom: 232px;
+}
+
+.consulting__border {
+    background: #FFFFFF;
+    border-radius: 40px;
+    padding-left: 60px;
+    padding-top: 63px;
+    display: flex;
+    position: relative;
+    border: 2px solid #FFFFFF;
+}
+
+.consulting__left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.consulting__title {
+    font-weight: 800;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.consulting__button {
+    display: flex;
+    padding-bottom: 60px;
+}
+
+.consulting__right {
+    display: flex;
+}
+
+.consulting__right--border {
+    background: linear-gradient(135deg, #8254BF,  #633F94);
+    width: 527px;
+    border-radius: 250px 40px 40px 90px;
+}
+
+.consulting__right--border img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: -257px;
+    right: 40px;
+}

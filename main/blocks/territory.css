@@ -1,0 +1,21 @@
+.territory {
+    display: flex;
+}
+
+.territory__container {
+    padding-right: calc(10px + 70 * ((100vw - 320px) / 1600));
+    padding-left: calc(10px + 70 * ((100vw - 320px) / 1600)); 
+    margin-bottom: 400px;
+}
+
+.territory__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 88px;
+}
+
+.territory__map img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}

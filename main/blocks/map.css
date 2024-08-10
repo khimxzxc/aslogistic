@@ -1,0 +1,42 @@
+
+
+.map__container {
+    width: calc(100% - 0px);
+    
+    
+}
+
+#map {
+    width: 100%;
+    height: 875px;
+    overflow: hidden;   
+    
+}
+
+.custom-svg-icon {
+    background: none;
+}
+
+.map__card {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 50px;
+}
+
+.map__card-border {
+    border-radius: 40px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 1px 1px 10px #E5E5E5;
+    padding-top: 50px;
+    padding-left: 43px;
+    padding-right: 45px;
+    padding-bottom: 38px;
+}
+
+.card-top {
+    font-weight: 800;
+    font-size: 24px;
+    color: #000000;
+}

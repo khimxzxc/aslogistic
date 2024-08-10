@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="main/normalize.css">
     <link rel="stylesheet" href="main/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 
     <title>AS Logistic</title>
 </head>
@@ -679,7 +679,7 @@
                 <div class="logistic__text">
                   <p class="logistic__text--one">
                     ТОО «AS Logistic» предлагает в аренду складские площади категории "А" с ж/д пандусами, с общей площадью <br>
-                    до 30 000 кв.м., офисные помещения, металлические контейнеры, морозильные камеры, ж/д тупик, территорию для размещения, овощехранилище, разгрузочный автопандус.
+                    до 30 000 кв.м., офисные помещения, металлические контейнеры, морозильные камеры, ж/д тупик, территорию для <br> размещения, овощехранилище, разгрузочный автопандус.
                   </p>
 
                   <p class="logistic__text--one">
@@ -700,7 +700,7 @@
                     <div class="caption__left">
                       <div class="caption-one">
                         <a href="image/captionone.jpg" data-fancybox="gallery" data-caption="Caption #1">
-                          <img src="image/captionminione.png" />
+                          <img src="image/captionminione.png" width="615" height="615"/>
                         </a>
                       </div>
                     </div>
@@ -708,25 +708,25 @@
                       <div class="caption__right">
                         <div class="caption-two">
                           <a href="image/captiontwo.jpg" data-fancybox="gallery" data-caption="Caption #2">
-                            <img src="image/captionminitwo.png" />
+                            <img src="image/captionminitwo.png" width="295" height="295"/>
                           </a>
                         </div>
     
                         <div class="caption-one">
                           <a href="image/captionfour.jpg" data-fancybox="gallery" data-caption="Caption #3">
-                            <img src="image/captionminifour.png" />
+                            <img src="image/captionminifour.png" width="295" height="295"/>
                           </a>
                         </div>
     
                         <div class="caption-one">
                           <a href="image/captionthree.jpg" data-fancybox="gallery" data-caption="Caption #4">
-                            <img src="image/captionminithree.png" />
+                            <img src="image/captionminithree.png" width="295" height="295"/>
                           </a>
                         </div>
     
                         <div class="caption-one">
                           <a href="image/captionfive.jpg" data-fancybox="gallery" data-caption="Caption #5">
-                            <img src="image/captionminifivepng.png" />
+                            <img src="image/captionminifivepng.png"width="295" height="295"/>
                           </a>
                         </div>
                         
@@ -744,10 +744,80 @@
        
           <img class="logistic__track" src="image/logistictrack.png" alt="" width="1300" height="915">
       </section>
+
+      <section class="territory">
+        <div class="territory__container container">
+          <div class="territory__content">
+            <div class="territory__title">
+              <div class="partners__title--text">
+                <h2 class="title-one">Схема территории</h2><h2 class=" title-two"> AS Logistic</h2>
+              </div>
+            </div>
+
+            <div class="territory__map">
+              <img src="image/territorymap.png" alt="map" loading="lazy" width="1400" height="720">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="consulting">
+        <div class="consulting__container container">
+          <div class="consulting__border">
+            <div class="consulting__left">
+              <div class="consulting__title">
+                Получить консультацию <br> специалиста
+              </div>
+              <div class="consulting__button">
+                <a href="#" class="button buttons">
+                  <svg width="24" height="24" viewBox="0 0 20 20" fill="none">
+                    <path d="M10 0C4.486 0 0 4.48568 0 10C0 11.9401 0.556315 13.8105 1.6123 15.4349L0.0540365 19.071C-0.0533854 19.321 0.00260417 19.612 0.195312 19.8047C0.322917 19.9323 0.49349 20 0.666667 20C0.755208 20 0.844727 19.9824 0.929362 19.946L4.56543 18.3874C6.18945 19.444 8.0599 20 10 20C15.5143 20 20 15.5143 20 10C20 4.48568 15.5143 0 10 0ZM15.1328 13.5794C15.1328 13.5794 14.3014 14.6458 13.7005 14.8952C12.1732 15.5273 10.0169 14.8952 7.56055 12.4395C5.10482 9.98307 4.47233 7.82682 5.10482 6.29948C5.35417 5.69792 6.42057 4.86719 6.42057 4.86719C6.70964 4.64193 7.15885 4.66992 7.41797 4.92904L8.62435 6.13542C8.88346 6.39453 8.88346 6.81901 8.62435 7.07812L7.86719 7.83464C7.86719 7.83464 7.56055 8.75521 9.40234 10.5977C11.2441 12.4395 12.1654 12.1328 12.1654 12.1328L12.9219 11.3757C13.181 11.1165 13.6055 11.1165 13.8646 11.3757L15.071 12.582C15.3301 12.8411 15.3581 13.2897 15.1328 13.5794Z" fill="#633F94"/>
+                    </svg>  Получить консультацию
+                  </a>
+              </div>
+            </div>
+
+            <div class="consulting__right">
+              <div class="consulting__right--border">
+                <img src="image/icons/consultingimg.png" alt="" width="415" height=" 622" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="map__container container">
+          <div class="map--static" id="map">
+          </div>
+        </div>
+
+        <div class="map__card">
+          <div class="map__card-left">
+            <div class="map__card-border">
+              <div class="card-top">
+                ТОО «AS Logistic»
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="map__card">
+            <div class="map__card-right">
+              
+            </div>
+        </div>
+      </div>
+      </section>
+
+
     </main>
-    
+
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="main/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+   
 </body>
 </html>

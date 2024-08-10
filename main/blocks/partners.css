@@ -22,6 +22,7 @@
     align-items: center;
     justify-content: center;
     gap: 7px;
+    text-transform: uppercase;
 }
 
 .partners__title--text h2 {
@@ -46,10 +47,10 @@
 
 .partners-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(1em, 1fr));
     align-items: center;
-    column-gap: 40px;
-  
+    column-gap: 45px;
+    vertical-align: middle;
 }
 
  /*.partners_slider-img img {
@@ -57,8 +58,9 @@
     max-width: 100%;
 }*/
 
-.partners_slider-img .rgbrands {
-    margin-right: calc(10px + 50 * ((100vw - 320px) / 1600));
+.partners_slider-img  {
+    margin-right: calc(5px + 15 * ((100vw - 320px) / 1600));
+    vertical-align: middle;
 }
 
 .partners__swipers-button-prev, .partners__swipers-button-next {
