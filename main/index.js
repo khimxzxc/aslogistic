@@ -15,7 +15,64 @@ document.getElementById("close").addEventListener("click", function() {
     document.body.classList.remove("no-scroll");
 })
 
-   // Создаем карту и устанавливаем начальные координаты и зум
+
+  /* 2gis map*/
+
+  /* document.addEventListener("DOMContentLoaded", function() {
+	// Инициализация карты
+	var map = DG.map('map', {
+		center: [52.307193, 76.943669], 
+		zoom: 17 
+	});
+
+}); */
+
+DG.then(function () {
+    var map = DG.map('map', {
+        center: [52.306925, 76.941093],
+        zoom: 17,
+		scrollWheelZoom: false
+		
+    });
+
+    var markers = [
+        { coords: [52.308305, 76.94306], icon: 'image/icons/logomarker.svg', id: 'marker1' },
+        { coords: [52.30628, 76.940983], icon: 'image/icons/logomarker.svg', id: 'marker1'  },
+        
+    ];
+
+    markers.forEach(function(marker) {
+        DG.marker(marker.coords, {
+            icon: DG.icon({
+                iconUrl: marker.icon,
+                iconSize: [35, 35]
+            })
+        }).addTo(map);
+    });
+	
+
+	var markerElement = document.querySelector('.marker-icon');
+
+	// Удаляем фильтр у маркера
+	if (markerElement) {
+		markerElement.style.removeProperty('filter'); // Удаляет стиль filter
+	}
+});
+
+	
+
+
+ 
+
+	
+
+
+
+
+
+
+	//map no 2gis
+ /*  // Создаем карту и устанавливаем начальные координаты и зум
    var map = L.map('map').setView([52.307193, 76.943669], 16);
 
    // Добавляем слой карты из OpenStreetMap
@@ -30,6 +87,7 @@ document.getElementById("close").addEventListener("click", function() {
 	popupAnchor: [0, -32] // Точка, которая будет размещена в положении всплывающего окна
 });
 
+
 var customSvg = L.divIcon({
 	className: 'custom-svg-icon',
 	html: `<svg  viewBox="0 0 65 72">
@@ -42,8 +100,8 @@ var customSvg = L.divIcon({
 </svg>
 `,
 iconSize: [35, 35], // Установите размер иконки в соответствии с вашими требованиями
-iconAnchor: [25, 30], // Точка, которая будет размещена в позиции маркера
-popupAnchor: [0, -72] // Точка, которая будет размещена в позиции всплывающего окна
+iconAnchor: [65, 25], // Точка, которая будет размещена в позиции маркера
+popupAnchor: [-15, -10] // Точка, которая будет размещена в позиции всплывающего окна
 });
 
 
@@ -58,7 +116,7 @@ popupAnchor: [0, -72] // Точка, которая будет размещен�
 	   .bindPopup('My Hostel 11/6')
 	   .openPopup();
 
-
+*/
 
 
 /*according */
@@ -130,5 +188,5 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
-  /* 2gis map*/
+
 

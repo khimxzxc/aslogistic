@@ -5,7 +5,7 @@
 .consulting__container {
     padding-left: calc(20px + 140 * ((100vw - 320px) / 1600));
     padding-right: calc(20px + 140 * ((100vw - 320px) / 1600)); 
-    margin-bottom: 232px;
+    margin-bottom: 330px;
 }
 
 .consulting__border {
@@ -53,4 +53,21 @@
     position: absolute;
     top: -257px;
     right: 40px;
+}
+
+.map-button {
+    display: flex;
+    border-radius: 53px;  
+    height: calc(13px + 67 * ((100vw - 320px) / 1600));
+    align-items: center;
+    justify-content: center;
+    color:white;
+    gap: calc(14px + 6*((100vw - 320px) /(1920 - 320)));
+    padding-top: 33px;
+    padding-bottom: 33px;
+    
+    padding-inline: calc(32px + 38*((100vw - 320px) /(1920 - 320)));
+    font-size: calc(16px + 4*((100vw - 320px)/(1920 - 320)));
+    align-self: flex-start;
+    overflow: hidden;
 }
