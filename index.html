@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main/normalize.css">
     <link rel="stylesheet" href="main/style.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/> --> 
 
     <title>AS Logistic</title>
@@ -539,54 +537,52 @@
                     <img src="image/hosteltop.jpg" alt="hostel_image" loading="lazy" width="520" height="480">
                   </div>
 
-                  <div class="swiper-container hostel-swipper">
 
-                    <div class="hostel__swiper--wrapper">
 
-                      <div class="hostel__swiper--slide">
+                  <div class="swiper-class">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper wrapper-class">
+                        <!-- Slides -->
+                        <div class="swiper-slide slide-class">
+                            <div class="hostelswiper_slider-img">
+                                <img src="image/slider-1.jpg" alt="image" loading="lazy" width="120" height="120">
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-class">
+                            <div class="hostelswiper_slider-img">
+                                <img src="image/slider-2.jpg" alt="image" loading="lazy" width="120" height="120">
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-class">
                           <div class="hostelswiper_slider-img">
-                            <img src="image/slider-1.jpg" alt="image" loading="lazy" width="120" height="120">
+                            <img src="image/slider-3.jpg" alt="image" loading="lazy" width="120" height="120">
                           </div>
-                      </div>
-
-                      <div class="hostel__swiper--slide">
-                        <div class="hostelswiper_slider-img">
-                          <img src="image/slider-2.jpg" alt="image" loading="lazy" width="120" height="120">
+                        </div>
+                        <div class="swiper-slide slide-class">
+                          <div class="hostelswiper_slider-img">
+                            <img src="image/slider-4.jpg" alt="image" loading="lazy" width="120" height="120">
+                          </div>
                         </div>
                     </div>
-
-                    <div class="hostel__swiper--slide">
-                      <div class="hostelswiper_slider-img">
-                        <img src="image/slider-3.jpg" alt="image" loading="lazy" width="120" height="120">
-                      </div>
-                  </div>
-
-                  <div class="hostel__swiper--slide">
-                    <div class="hostelswiper_slider-img">
-                      <img src="image/slider-4.jpg" alt="image" loading="lazy" width="120" height="120">
+                
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-prevClass">
+                        <button class="hostel-btn">
+                          <svg class="left--btn" width="12" height="20" viewBox="0 0 12 20" fill="none">
+                            <path d="M10.3196 19.8192C10.805 19.8192 11.1285 19.6574 11.4521 19.3338C12.0993 18.6867 12.0993 17.7159 11.4521 17.0687L4.49512 10.1117L11.4521 3.15474C12.0993 2.50758 12.0993 1.53683 11.4521 0.889669C10.805 0.242506 9.83422 0.242506 9.18706 0.889669L1.09752 8.97921C0.450353 9.62637 0.450353 10.5971 1.09752 11.2443L9.18706 19.3338C9.51064 19.6574 9.83422 19.8192 10.3196 19.8192Z" fill="black"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-button-nextClass">
+                        <button class="hostel-btn">
+                          <svg class="right--btn" width="12" height="20" viewBox="0 0 12 20" fill="none">
+                            <path d="M1.68041 19.8192C1.19504 19.8192 0.871454 19.6574 0.547872 19.3338C-0.0992908 18.6867 -0.0992908 17.7159 0.547872 17.0687L7.50488 10.1117L0.547872 3.15474C-0.0992908 2.50758 -0.0992908 1.53683 0.547872 0.889669C1.19504 0.242506 2.16578 0.242506 2.81294 0.889669L10.9025 8.97921C11.5496 9.62637 11.5496 10.5971 10.9025 11.2443L2.81294 19.3338C2.48936 19.6574 2.16578 19.8192 1.68041 19.8192Z" fill="black"/>
+                            </svg>
+                        </button>
                     </div>
                 </div>
+                
 
-                    </div>
-
-                    <div class=" hostel__swiper-button-prev">
-                    <button class="hostel-btn">
-                      <svg class="left--btn" width="12" height="20" viewBox="0 0 12 20" fill="none">
-                        <path d="M10.3196 19.8192C10.805 19.8192 11.1285 19.6574 11.4521 19.3338C12.0993 18.6867 12.0993 17.7159 11.4521 17.0687L4.49512 10.1117L11.4521 3.15474C12.0993 2.50758 12.0993 1.53683 11.4521 0.889669C10.805 0.242506 9.83422 0.242506 9.18706 0.889669L1.09752 8.97921C0.450353 9.62637 0.450353 10.5971 1.09752 11.2443L9.18706 19.3338C9.51064 19.6574 9.83422 19.8192 10.3196 19.8192Z" fill="black"/>
-                        </svg>
-                    </button>
-                     
-                        
-                    </div>
-                    <div class="hostel__swiper-button-next">
-                     <button class="hostel-btn">
-                      <svg class="right--btn" width="12" height="20" viewBox="0 0 12 20" fill="none">
-                        <path d="M1.68041 19.8192C1.19504 19.8192 0.871454 19.6574 0.547872 19.3338C-0.0992908 18.6867 -0.0992908 17.7159 0.547872 17.0687L7.50488 10.1117L0.547872 3.15474C-0.0992908 2.50758 -0.0992908 1.53683 0.547872 0.889669C1.19504 0.242506 2.16578 0.242506 2.81294 0.889669L10.9025 8.97921C11.5496 9.62637 11.5496 10.5971 10.9025 11.2443L2.81294 19.3338C2.48936 19.6574 2.16578 19.8192 1.68041 19.8192Z" fill="black"/>
-                        </svg>
-                     </button>
-                    </div>
-                    
-                  </div>
                </div>
             </div>
 
@@ -974,7 +970,7 @@
 
    <!-- <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> --> 
     
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="main/index.js"></script>

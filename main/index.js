@@ -17,17 +17,19 @@ document.getElementById("close").addEventListener("click", function() {
 
 
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
-	var swiper = new Swiper('.hostel-swipper', {
-		direction: 'vertical',
-		loop: true,
-		navigation: {
-			nextEl: '.hostel__swiper-button-next',
-			prevEl: '.hostel__swiper-button-prev',
-		},
-		mousewheel: true,
-		keyboard: true,
-	});
+    const swiper = new Swiper('.swiper-class', {
+        // Optional parameters
+		direction: 'horizontal',
+        loop: true,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-prevClass',
+            prevEl: '.swiper-button-nextClass',
+        },
+    });
 });
 
 
@@ -204,6 +206,21 @@ popupAnchor: [-15, -10] // Точка, которая будет размеще�
 
 */
 
-
+/*const swiper = new Swiper('.swiperclass', {
+	// Optional parameters
+	direction: 'vertical',
+	loop: true,
+  
+	
+  
+	// Navigation arrows
+	navigation: {
+	  nextEl: '.swiper-button-nextClass',
+	  prevEl: '.swiper-button-prevClass',
+	},
+  
+	// And if we need scrollbar
+	
+  });*/
 
 
