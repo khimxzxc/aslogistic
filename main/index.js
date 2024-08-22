@@ -23,11 +23,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.swiper-class', {
         // Optional parameters
 		direction: 'horizontal',
-        loop: true,
+		slidesPerView: '4',
+		spaceBetween: '20',
         // Navigation arrows
         navigation: {
-            nextEl: '.swiper-button-prevClass',
-            prevEl: '.swiper-button-nextClass',
+            nextEl: '.nextClass',
+            prevEl: '.prevClass',
         },
     });
 });
