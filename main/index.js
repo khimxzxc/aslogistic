@@ -20,7 +20,7 @@ document.getElementById("close").addEventListener("click", function() {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.swiper-class', {
+    const swiper1 = new Swiper('.swiper-class', {
         // Optional parameters
 		direction: 'horizontal',
 		slidesPerView: '4',
@@ -31,7 +31,22 @@ document.addEventListener('DOMContentLoaded', function () {
             prevEl: '.prevClass',
         },
     });
+
+
+	const swiper2 = new Swiper('.swiper-partners', {
+		loop: true,
+		direction: 'horizontal',
+		slidesPerView: 5,
+		navigation: {
+			nextEl: '.nextBTN',
+			prevEl: '.prevBTN',
+		},
+		watchOverflow: true, // Отключение блокировки кнопок
+	});
+
 });
+
+
 
 
 

@@ -1,5 +1,6 @@
 .partners {
     display: flex;
+    position: relative;
 }
 
 .partners__container {
@@ -9,6 +10,7 @@
     display: flex;
     flex-direction: column;
     gap: calc(18px + 41 * ((100vw - 320px) / 1600));
+    position: relative;
 }
 
 .partners__title {
@@ -35,22 +37,24 @@
     color: #633F94;
 }
 
-.partners-swipper {
+.swiper-partners {
     background: #FFFFFF;
     border-radius: 40px;
+    z-index: -1;
+    width: 1400px;
+    height: 315px;
+    position: relative;
+}
+
+.wrapper-partners {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1em, 1fr));
+    align-items: center;
     padding-top: calc(17px + 41 * ((100vw - 320px) / 1600));
     padding-left: calc(15px + 70 * ((100vw - 320px) / 1600));
     padding-right: calc(15px + 70 * ((100vw - 320px) / 1600));
     padding-bottom: calc(11px + 56 * ((100vw - 320px) / 1600));
-    position: relative;
-}
-
-.partners-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1em, 1fr));
-    align-items: center;
-    column-gap: 45px;
-    vertical-align: middle;
+    
 }
 
  /*.partners_slider-img img {
@@ -60,10 +64,12 @@
 
 .partners_slider-img  {
     margin-right: calc(5px + 15 * ((100vw - 320px) / 1600));
-    vertical-align: middle;
+   align-items: center;
+   vertical-align: middle;
+    object-fit: cover;
 }
 
-.partners__swipers-button-prev, .partners__swipers-button-next {
+.prevBTN, .nextBTN {
     border-radius: 40px;
     background: #ffffff;
     padding-top: 20px;
@@ -73,16 +79,20 @@
     border: 1px solid #ffffff;
 }
 
-.partners__swipers-button-prev {
+.prevBTN {
+    left: 10px;
+    top: 0px;
+    z-index: 1;
     position: absolute;
-    left: -35px;
-    top: 120px;
+    background-color: red;
+   
 }
 
-.partners__swipers-button-next {
+.nextBTN {
+    right: 0px;
+    top: 0px;
+    z-index: 1;
     position: absolute;
-    right: -35px;
-    top: 120px;
 }
 
 .partners__buttons {
